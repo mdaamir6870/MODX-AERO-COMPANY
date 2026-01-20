@@ -1,53 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ModX Aero (OPC) Private Limited provides Drone-as-a-Service (DaaS) for inspection, survey, monitoring and AI analytics.">
-  <title>ModX Aero | Smart Drone & AI Solutions</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="assets/images/logo.png" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModX Aero (OPC) Private Limited</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#0b3c5d;
+  --secondary:#1d70a2;
+  --light:#f4f7fb;
+  --dark:#0a2540;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--light);
+  color:#333;
+}
+header{
+  position:fixed;
+  width:100%;
+  background:white;
+  box-shadow:0 5px 20px rgba(0,0,0,.1);
+  z-index:1000;
+}
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:1rem 2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav a{
+  margin-left:1.5rem;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#0b3c5d,#1d70a2);
+  color:white;
+  text-align:center;
+  padding:2rem;
+}
+.hero h1{
+  font-size:3rem;
+  margin-bottom:1rem;
+}
+.hero p{
+  max-width:700px;
+  margin:auto;
+  opacity:.95;
+}
+section{
+  padding:5rem 2rem;
+  max-width:1200px;
+  margin:auto;
+}
+section h2{
+  text-align:center;
+  margin-bottom:3rem;
+  color:var(--dark);
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:2rem;
+}
+.card{
+  background:white;
+  padding:2rem;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.card h3{
+  color:var(--primary);
+  margin-bottom:1rem;
+}
+.about{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+}
+footer{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:2rem;
+}
+.contact input,.contact textarea{
+  width:100%;
+  padding:.8rem;
+  margin-bottom:1rem;
+}
+.contact button{
+  background:var(--secondary);
+  color:white;
+  border:none;
+  padding:.8rem 2rem;
+  cursor:pointer;
+}
+@media(max-width:768px){
+  .hero h1{font-size:2.2rem}
+}
+</style>
 </head>
+
 <body>
-  <header class="navbar">
-    <img src="assets/images/logo.png" class="logo" alt="ModX Aero logo">
+
+<header>
+  <div class="nav">
+    <strong>ModX Aero</strong>
     <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="industries.html">Industries</a></li>
-        <li><a href="why.html">Why Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section class="hero">
-    <h1>Smart Drone & AI Solutions for Inspection and Monitoring</h1>
-    <p>Delivering precision aerial intelligence for industries, infrastructure and government projects.</p>
-    <a href="contact.html" class="btn">Get in Touch</a>
-  </section>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div>
+    <h1>ModX Aero (OPC) Private Limited</h1>
+    <p>
+      A technology-driven Drone-as-a-Service (DaaS) company delivering safe,
+      reliable, and data-driven aerial inspection, survey, and monitoring solutions.
+    </p>
+  </div>
+</section>
 
-  <section class="intro">
-    <h2>About ModX Aero</h2>
-    <p>ModX Aero (OPC) Private Limited offers comprehensive Drone-as-a-Service solutions including aerial inspection, survey, monitoring and AI-based analytics for enterprise and government sectors.</p>
-  </section>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about">
+    <p>
+      ModX Aero (OPC) Private Limited specializes in replacing traditional,
+      manual, and high-risk inspection methods with advanced drone technology.
+      Our solutions enable faster data collection, higher accuracy, and improved
+      operational safety across industries.
+    </p>
+  </div>
+</section>
 
-  <section class="highlights">
-    <h2>Key Services</h2>
-    <div class="grid">
-      <div class="card">Drone Inspection</div>
-      <div class="card">Aerial Survey & Mapping</div>
-      <div class="card">Monitoring & Asset Inspection</div>
-      <div class="card">AI & Data Analytics</div>
+<!-- SERVICES -->
+<section id="services">
+  <h2>Core Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Industrial & Infrastructure Inspection</h3>
+      <p>Drone-based inspection for hard-to-reach and high-risk assets.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>Aerial Survey & Mapping</h3>
+      <p>High-accuracy mapping and monitoring for construction and infrastructure projects.</p>
+    </div>
+    <div class="card">
+      <h3>Asset Monitoring</h3>
+      <p>Inspection of energy, utilities, and industrial assets using drones.</p>
+    </div>
+    <div class="card">
+      <h3>Data-Driven Reporting</h3>
+      <p>Professional reports and analytics to support informed decision-making.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 ModX Aero (OPC) Private Limited | Darbhanga, Bihar, India</p>
-  </footer>
-  <button id="scrollTop" title="Back to top">↑</button>
-  <script src="assets/js/script.js"></script>
+<!-- VISION & MISSION -->
+<section>
+  <h2>Vision & Mission</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Vision</h3>
+      <p>
+        To build a future-ready technology company enhancing inspection and monitoring
+        through drones and advanced analytics.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Mission</h3>
+      <p>
+        To deliver dependable drone-based solutions that reduce risk,
+        save time, and improve operational efficiency.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <input placeholder="Name">
+  <input placeholder="Email">
+  <textarea placeholder="Project Requirement"></textarea>
+  <button onclick="alert('Thank you! Our team will contact you.')">Submit</button>
+</section>
+
+<footer>
+  © 2026 ModX Aero (OPC) Private Limited
+</footer>
+
 </body>
 </html>
