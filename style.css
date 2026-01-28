@@ -82,8 +82,15 @@ body {
 }
 
 /* ========= HERO (FIXED) ========= */
+/* ========= HERO (UPDATED WITH IMAGE) ========= */
 .hero-section {
-  background: linear-gradient(135deg, #0b1220 0%, #1e3a8a 50%, #1e40af 100%);
+  background:
+    linear-gradient(rgba(11,18,32,0.55), rgba(11,18,32,0.75)),
+    url("assets/images/Hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   min-height: 75vh;
   display: flex;
   align-items: center;
@@ -94,12 +101,7 @@ body {
   position: relative;
 }
 
-.hero-section .overlay {
-  background: rgba(0,0,0,0.35);
-  position: absolute;
-  inset: 0;
-}
-
+/* Overlay no longer needed separately, kept clean */
 .hero-content {
   position: relative;
   z-index: 2;
