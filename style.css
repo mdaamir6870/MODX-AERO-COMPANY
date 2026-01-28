@@ -47,7 +47,23 @@ body {
   top: 0;
   z-index: 999;
 }
-.logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+/* ========= Logo Image ========= */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 140px;   /* Desktop */
+  height: auto;
+}
+
+/* Mobile logo size */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 110px;
+  }
+}
 .nav-links { display: flex; list-style: none; gap: 20px; }
 .nav-links a {
   color: white;
