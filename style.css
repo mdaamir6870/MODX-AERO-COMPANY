@@ -36,8 +36,13 @@ body {
 }
 
 /* ========= Navbar ========= */
+/* ========= Navbar (Improved for Logo Visibility) ========= */
 .navbar {
-  background: var(--brand);
+  background: linear-gradient(
+    135deg,
+    #0b3c5d,
+    #0e4b73
+  );
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -46,6 +51,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 /* ========= Logo Image ========= */
 .logo-wrap {
